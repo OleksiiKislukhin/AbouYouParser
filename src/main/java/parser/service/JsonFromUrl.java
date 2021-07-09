@@ -1,8 +1,8 @@
 package parser.service;
 
-import java.io.IOException;
-
 import org.jsoup.Jsoup;
+
+import java.io.IOException;
 
 public class JsonFromUrl {
     private static final String USER = "Mozilla";

@@ -1,5 +1,3 @@
-package parser;
-
 import parser.service.ThreadRequestURL;
 
 import java.io.FileWriter;
@@ -14,7 +12,7 @@ public class Main {
         ThreadRequestURL R2 = new ThreadRequestURL( "Thread-2", ((SUBPAGE_COUNT + 2) / 2), SUBPAGE_COUNT);
 
         try {
-            PrintWriter writer = new PrintWriter(new FileWriter(R1.OUTPUT_FILE_PATH));
+            PrintWriter writer = new PrintWriter(new FileWriter(R1.getFilePath()));
             writer.print("");
             writer.close();
         } catch (IOException e) {

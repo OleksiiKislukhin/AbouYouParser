@@ -29,7 +29,7 @@ public class ThreadRequestURL extends Thread {
         WebParser webParser = new WebParser();
         FileWriterJson fileWriterJson = new FileWriterJson();
         JsonFromUrl jsonFromUrl = new JsonFromUrl();
-        String webPageJson = "{}";
+        String webPageJson;
 
         for (int subpagesIndex = subpageStart; subpagesIndex <= subpageEnd; subpagesIndex++) {
             String webUrlWithIndex = webUrl.replace(WEB_URL_INDEX_NAME, String.valueOf(subpagesIndex));
@@ -60,5 +60,9 @@ public class ThreadRequestURL extends Thread {
 
     public Thread getThread() {
         return t;
+    }
+
+    public String getFilePath() {
+        return OUTPUT_FILE_PATH;
     }
 }

@@ -13,7 +13,7 @@ Parsing algorithm is based on iterating over the index in URL. Number of subpage
 
 Was used simple multi-threading. Thread count is 2.
 
-Program will be executed in the following way: ~$ java -jar webParser.jar
+Program will be executed in the following way: ~$ java -jar AboutYouParser.jar
 
 The extracted offers will be written into a JSON file "output.json" in the same folder where jar file is. 
 
